@@ -1,0 +1,161 @@
+html {
+    font-size: 100%;
+    font-family: vazir;
+}
+
+.contianer {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.form {
+    margin-top: 2rem;
+}
+
+.form .form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+.form input{
+    width: 90%;
+    text-align: center;
+}
+
+.form label {
+    font-weight: bold;
+}
+
+.form label,
+.form input:not([type="checkbox"]) {
+    display: block;
+    margin-bottom: 0.7rem;
+}
+.form input:invalid {
+    background-color: rgb(250, 103, 103);
+    border: 1px solid rgb(255, 48, 48);
+}
+
+.form input:focus {
+    background: #ddd;
+    outline: none;
+    border: 1px solid red !important;
+}
+.koly {
+    border-radius: 9px;
+    border: 3px solid rgba(120, 30, 210, 0.6);
+    padding: 10px;
+    width: 90%;
+}
+
+.halat {
+    font-family: inherit;
+    padding: .6rem .6rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .5);
+}
+
+::placeholder {
+    color: blue;
+    font-family: vazir;
+    font-weight: bold;
+    text-align: center;
+}
+
+.checkbox {
+    position: relative;
+    padding-right: 2.1rem;
+    padding-top: .4rem;
+}
+.checkbox input{
+    display: none;
+}
+
+.checkbox .checkmark {
+    height: 25px;
+    width: 25px;
+    background-color: rgba(253, 112, 112, 0.75);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: .4rem;
+    border-radius: 5px;
+}
+/*
+.checkbox:hover .checkmark {
+    background-color: rgba(255, 6, 6, 0.65);
+}
+
+
+.checkbox input:checked ~ .checkmark {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.checkbox::after {
+    content:"" ;
+    position: absolute;
+    display: none;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    top: 9px;
+    right: 8px;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg );
+}
+
+.checkbox input:checked ~ .checkmark::after {
+    display: block ;
+}
+*/
+.checkbox:hover .checkmark {
+    background-color: #ccc;
+  }
+  
+  .checkbox input:checked ~ .checkmark {
+    background-color: #2196f3;
+  }
+  
+  .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    top: 5px;
+    right: 8px;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+  .checkbox input:checked ~ .checkmark::after {
+    display: block;
+  }
+
+
+  .btn {
+    border: none;
+    font-family: inherit;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+  }
+  
+  .btn-seccuss{
+    background-color: rgb(43, 173, 43);
+    color: wheat;
+    border: 2px solid rgb(27, 109, 27);
+  }
+
+  .btn-danger{
+    background-color: rgb(255, 51, 51);
+    color: wheat;
+    border: 2px solid rgb(226, 0, 0);
+  }
+
+  .btn-vorod{
+    background-color: rgb(100, 100, 250);
+    color: white;
+    border: 2px solid rgb(0, 0, 199);
+  }

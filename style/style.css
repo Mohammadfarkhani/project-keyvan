@@ -1,0 +1,52 @@
+
+
+.header {
+    padding: 5px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    justify-content: space-between;
+    text-align: center;
+    background-color: #f39c12;
+    position:sticky;
+
+}
+
+.input {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #f1c40f;
+    padding: 5px;
+    margin-left: 5px;
+}
+.item {
+    
+    display: inline-block;
+    text-align: start;
+}
+.text {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin: 4px;
+}
+
+.form {
+    display: inline-block;
+    text-align: end;
+
+}
+
+.content {
+    
+    display: block;
+}
+
+
+
+.vazir {
+    font-family: vazir;
+}
+.yekan {
+    font-family: yekan;
+}
