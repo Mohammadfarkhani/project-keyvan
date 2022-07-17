@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/form/reset.css">
-    <link rel="stylesheet" href="../style/form/style-2.css">
+    <link rel="stylesheet" href="../style/form/style-form.css">
     <link rel="stylesheet" href="../fonts/font-face.css">
     <title>فرم ورود</title>
 </head>
@@ -15,16 +15,23 @@
 
     <div class="contianer">
         <form class="form" action="#">
-            <h2 class="form-title">فرم ورود</h2>
-            <label for="name">نام کاربری :</label>
-            <input type="text" name="name" placeholder="لطفا نام خود را وارد کنید">
+            <div class="koly">
+                <h2 class="form-title">فرم ورود</h2>
+                <label for="name">نام کاربری :</label>
+                <input type="text" name="name" placeholder="لطفا نام خود را وارد کنید" required>
 
-            <label for="email">ایمیل :</label>
-            <input type="email" name="email" placeholder="لطفا ایمیل خود را وارد کنید">
+                <label for="email">ایمیل :</label>
+                <input type="email" name="email" placeholder="لطفا ایمیل خود را وارد کنید" required>
 
-            <label for="password">رمز عبود :</label>
-            <input type="password" name="password">
+                <label for="password">رمز عبود :</label>
+                <input type="password" name="password" minlength="8">
+            </div>
+            <div class="btn">
+                <a href="./form-2.html"><input class="btn sabt" type="button" value="ورود"></a>
+                <button class="btn btn-vorod">ثبت نام</button>
 
+                <a href="./index.html"><input class="btn exit" type="button" value="خروج"></a>            </div>
+            </div>
         </form>
     </div>
 
