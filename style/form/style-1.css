@@ -1,123 +1,132 @@
 html {
+    font-family: "vazir";
     font-size: 100%;
-    font-family: vazir;
 }
 
 .contianer {
-    width: fit-content;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
+    width: 50%;
+    border: 5px solid rgba(0, 128, 0, 0.6);
+    border-radius: 15px;
+    padding: 5px;
 }
 
 .form {
-    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.form .form-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 1rem;
-}
-.form input{
-    width: 90%;
-    text-align: center;
-}
-
-.form label {
-    font-weight: bold;
-}
-
-.form label,
-.form input:not([type="checkbox"]) {
-    display: block;
-    margin-bottom: 0.7rem;
-}
-.form input:invalid {
-    background-color: rgb(250, 103, 103);
-    border: 1px solid rgb(255, 48, 48);
-}
-
-.form input:focus {
-    background: #ddd;
-    outline: none;
-    border: 1px solid red !important;
-}
-.koly {
-    border-radius: 9px;
-    border: 3px solid rgba(120, 30, 210, 0.6);
-    padding: 10px;
-    width: 90%;
-}
-
-.halat {
-    font-family: inherit;
-    padding: .6rem .6rem;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, .5);
+.form .koly {
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
 }
 
 ::placeholder {
-    color: blue;
-    font-family: vazir;
+    color: #0000009c;
     font-weight: bold;
-    text-align: center;
+}
+
+/* کلید ها */
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn .btn {
+    margin: 0 3px 0 3px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.btn .btn-vorod {
+    background-color: #1eb90099;
+    border: 1px solid #1eb90099;
+    font-family: "vazir";
+    padding: 2px 7px;
+}
+
+.btn .btn-vorod:hover {
+    background-color: #1fb900d7;
+    border: 1px solid #1fb900;
+}
+
+.btn .sabt {
+    background-color: #000cb96e;
+    border: 1px solid #000cb96e;
+    font-family: "vazir";
+    padding: 2px 7px;
+}
+
+.btn .sabt:hover {
+    background-color: #000cb9c2;
+    border: 1px solid #000cb9c2;
+}
+
+.btn .exit {
+    background-color: #b900006e;
+    border: 1px solid #b900006e;
+    font-family: "vazir";
+    padding: 2px 7px;
+}
+
+.btn .exit:hover {
+    background-color: #b90000c2;
+    border: 1px solid #b90000c2;
+}
+
+/* کادر ورود اطلاعات */
+
+.koly input {
+    font-family: "vazir";
+    border: 2px solid #b6b6b6;
+    border-radius: 5px;
+}
+
+.koly input:hover {
+    font-family: "vazir";
+    border: 2px solid #818181;
+    border-radius: 5px;
+}
+
+
+/* چک باکس */
+
+.checkbox input {
+    display: none;
 }
 
 .checkbox {
     position: relative;
     padding-right: 2.1rem;
     padding-top: .4rem;
-}
-.checkbox input{
-    display: none;
+
 }
 
 .checkbox .checkmark {
-    height: 25px;
     width: 25px;
-    background-color: rgba(253, 112, 112, 0.75);
+    height: 25px;
+    background-color: #dad3d385;
     display: block;
     position: absolute;
     right: 0;
     top: .4rem;
+    border: 1px solid #afafaf85;
     border-radius: 5px;
 }
-/*
-.checkbox:hover .checkmark {
-    background-color: rgba(255, 6, 6, 0.65);
-}
 
+.checkbox:hover .checkmark {
+    background-color: #85858573;
+}
 
 .checkbox input:checked ~ .checkmark {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #3838ffb7;
 }
 
-.checkbox::after {
-    content:"" ;
-    position: absolute;
-    display: none;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    top: 9px;
-    right: 8px;
-    border-width: 0 3px 3px 0;
-    transform: rotate(45deg );
-}
-
-.checkbox input:checked ~ .checkmark::after {
-    display: block ;
-}
-*/
-.checkbox:hover .checkmark {
-    background-color: #ccc;
-  }
-  
-  .checkbox input:checked ~ .checkmark {
-    background-color: #2196f3;
-  }
-  
-  .checkmark::after {
+.checkmark::after {
     content: "";
     position: absolute;
     display: none;
@@ -128,34 +137,18 @@ html {
     right: 8px;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
-  }
-  
-  .checkbox input:checked ~ .checkmark::after {
+}
+
+.checkbox input:checked ~ .checkmark::after {
     display: block;
-  }
+}
 
+/* اعتبار سنجی فرم */
 
-  .btn {
-    border: none;
-    font-family: inherit;
-    padding: .5rem 1rem;
-    border-radius: 4px;
-  }
-  
-  .btn-seccuss{
-    background-color: rgb(43, 173, 43);
-    color: wheat;
-    border: 2px solid rgb(27, 109, 27);
-  }
+input:invalid {
+    background-color: #f38b8bb0;
+}
 
-  .btn-danger{
-    background-color: rgb(255, 51, 51);
-    color: wheat;
-    border: 2px solid rgb(226, 0, 0);
-  }
-
-  .btn-vorod{
-    background-color: rgb(100, 100, 250);
-    color: white;
-    border: 2px solid rgb(0, 0, 199);
-  }
+input:focus {
+    background-color: #ffffff;
+}

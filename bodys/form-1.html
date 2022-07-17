@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
-    <head>
-        
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-compatible" content="ie=edge">
-        <link rel="stylesheet" href="../fonts/font-face.css">
-        <link rel="stylesheet" href="../style/form/reset.css">
-        <link rel="stylesheet" href="../style/form/style-1.css">
-        <title>فرم ثبت نام</title>
-    </head>
-    <body>
-        <div class="contianer">
-            
-            <form class="form" action="#">
-                    <h2 class="form-title">فرم ثبت نام</h2>
-                    <div class="koly">
-                        <label for="name">نام :</label>
-                        <input type="text" name="name" class="halat" id="name" placeholder="لطفا نام خود را وارد کنید" required>
-        
-                        <label for="email">ایمیل :</label>
-                        <input type="email" name="email" class="halat" id="email" placeholder="لطفا ایمیل خود را وارد کنید" required>
-        
-                        <label for="password">پسورد :</label>
-                        <input type="password" name="password" class="halat" id="password" minlength="8">
-        
-                        <label for="password-confrim">تکرار پسورد :</label>
-                        <input type="password" name="password-confrim" class="halat" id="password-confrim">
-        
-                        <label for="rules" class="checkbox">
-                        <input type="checkbox" name="rules" id="rules"> قوانین را قبول دارم
-                        <span class="checkmark"></span>
-                        </label>
-                        <br>
-            
-                        <button class="btn btn-vorod">ورود</button>
-                        <button class="btn btn-seccuss">ثبت نام</button>
-                        <button class="btn btn-danger">خروج</button>
-                    </div>  
-            </form>    
-        
-        </div>
 
-    </body>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <link rel="stylesheet" href="../fonts/font-face.css">
+    <link rel="stylesheet" href="../style/form/reset.css">
+    <link rel="stylesheet" href="../style/form/style-1.css">
+    <title>فرم ثبت نام</title>
+</head>
+
+<body>
+    <div class="contianer">
+
+        <form class="form" action="#">
+            <h2 class="form-title">فرم عضویت</h2>
+            <div class="koly">
+                <label for="name">نام :</label>
+                <input type="text" name="name" class="halat" id="name" placeholder="لطفا نام خود را وارد کنید" required>
+
+                <label for="email">ایمیل :</label>
+                <input type="email" name="email" class="halat" id="email" placeholder="لطفا ایمیل خود را وارد کنید" required>
+
+                <label for="password">پسورد :</label>
+                <input type="password" name="password" class="halat" id="password" minlength="8">
+
+                <label for="password-confrim">تکرار پسورد :</label>
+                <input type="password" name="password-confrim" class="halat" id="password-confrim">
+
+                <label for="rules" class="checkbox">
+                    <input type="checkbox" name="rules" id="rules"> قوانین را قبول دارم
+                    <span class="checkmark"></span>
+                </label>
+
+            </div>
+            <div class="btn">
+                <a href="./form-2.html"><input class="btn sabt" type="button" value="ورود"></a>
+                <button class="btn btn-vorod">ثبت نام</button>
+
+                <a href="./index.html"><input class="btn exit" type="button" value="خروج"></a>            </div>
+        </form>
+
+    </div>
+
+</body>
