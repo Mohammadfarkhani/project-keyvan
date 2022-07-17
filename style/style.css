@@ -1,52 +1,78 @@
 
+html {
+    font-family: "vazir";
+}
 
-.header {
-    padding: 5px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2 , 1fr);
+
+header {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    background-color: #f39c12;
-    position:sticky;
-
-}
-
-.input {
-    border: 1px solid black;
+    align-items: center;
+    margin: 0;
+    padding: 15px;
+    background: linear-gradient(0.25turn, #00ff00b9, #f69d3c);
     border-radius: 10px;
-    background-color: #f1c40f;
-    padding: 5px;
-    margin-left: 5px;
 }
-.item {
-    
+
+@media (max-width: 580px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        
+    }
+  }
+
+.item-l {
     display: inline-block;
     text-align: start;
+    margin: 10px;
+}
+.item-r {
+    display: inline-block;
+    text-align: end;
+    margin: 10px;
 }
 .text {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 5px;
-    margin: 4px;
+    margin: 5px;
 }
 
-.form {
-    display: inline-block;
-    text-align: end;
+.btn {
 
 }
-
-.content {
-    
-    display: block;
+.btn-vorod {
+    background-color: #56f544;
+    border: 1px solid #56f544;
+    border-radius: 5px;
+    font-family: "vazir";
+    padding: 2px 7px;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
-
-
-.vazir {
-    font-family: vazir;
+.btn-vorod:hover {
+    background-color: #56f544;
+    border: 1px solid #ffffffa1;
 }
-.yekan {
-    font-family: yekan;
+
+.btn-sabt {
+    background-color: #4cfb45;
+    border: 1px solid #4cfb45;
+    border-radius: 5px;
+    font-family: "vazir";
+    padding: 2px 7px;
+    font-weight: bold;
+    font-size: 1rem;
 }
+
+.btn-sabt:hover {
+    background-color: #4cfb45;
+    border: 1px solid #ffffffa1;
+}
+
