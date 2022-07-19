@@ -1,0 +1,159 @@
+
+html {
+    font-family: "vazir";
+}
+
+header {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 15px;
+    background: linear-gradient(0.25turn, #00ff00b9, #f69d3c);
+    border-radius: 10px;
+}
+
+@media (max-width: 580px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        
+    }
+  }
+
+.item-l {
+    display: inline-block;
+    text-align: start;
+    margin: 10px;
+}
+.item-r {
+    display: inline-block;
+    text-align: end;
+    margin: 10px;
+}
+.link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.btn-vorod {
+    background-color: #56f544;
+    border: 1px solid #56f544;
+    border-radius: 5px;
+    font-family: "vazir";
+    padding: 2px 7px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn-vorod:hover {
+    background-color: #56f544;
+    border: 1px solid #ffffffa1;
+}
+
+.btn-sabt {
+    background-color: #4cfb45;
+    border: 1px solid #4cfb45;
+    border-radius: 5px;
+    font-family: "vazir";
+    padding: 2px 7px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn-sabt:hover {
+    background-color: #4cfb45;
+    border: 1px solid #ffffffa1;
+}
+
+.text {
+    text-align: justify ;
+}
+
+/* باکس های محصولات */
+.mahsol {
+    display: flex;
+    flex-direction: row;
+}
+.mahsol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+    width: 50%;
+    height: 75%;
+    margin: 0 20px 0 20px;
+    padding: 5px 0 5px 0;
+}
+.I-2 {
+
+    background: url(../image/10111.jpg) no-repeat 10% 70%/cover;
+    width: 75%;
+    height: 355px;
+    border-radius: 5px;
+}
+
+.text-box {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    
+}
+
+/* @media (max-width: 768px) {
+    .mahsol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid cadetblue;
+        border-radius: 10px;
+        width: 50%;
+        height: 75%;
+        margin: 10px 10px 10px 10px;
+        padding: 5px 0 5px 0;
+    }
+    .I-2 {
+        width: 90%;
+        height: 400px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .mahsol {
+        width: 100%;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+justify-content: center;
+
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid cadetblue;
+        border-radius: 10px;
+        width: 75%;
+        height: 75%;
+        margin: 10px 10px 10px 10px;
+        padding: 5px 0 5px 0;
+    }
+  } */
