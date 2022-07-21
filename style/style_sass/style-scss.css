@@ -1,3 +1,169 @@
+@charset "UTF-8";
+/* باکس های محصولات */
+.mahsol {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 15px;
+}
 
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid cadetblue;
+  border-radius: 10px;
+  width: 90%;
+  height: 70%;
+  margin: 0 20px 0 20px;
+  padding: 5px 0 5px 0;
+}
+.box .I-2 {
+  background: url(../image/10111.jpg) no-repeat 10% 70%/cover;
+  width: 90%;
+  height: 490px;
+  border-radius: 5px;
+}
+.box .text-box {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 7px;
+  margin-top: 10px;
+  padding: 5px;
+}
+.box .text-box .title-bock {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+.box .text-box .info-bock {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+@media only screen and (max-width: 993px) {
+  .mahsol {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .mahsol .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+    width: 95%;
+    height: 80%;
+    margin: 0 0px 0px 0px;
+    padding: 3px 3px 3px 0;
+  }
+  .mahsol .box .I-2 {
+    background: url(../image/10111.jpg) no-repeat 10% 70%/cover;
+    width: 75%;
+    height: 355px;
+    border-radius: 5px;
+  }
+  .mahsol .box .text-box {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 8px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mahsol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .mahsol .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
+    margin: 0 10px 10px 10px;
+    padding: 5px 5px 5px 0;
+  }
+  .mahsol .box .I-2 {
+    background: url(../image/10111.jpg) no-repeat 10% 70%/cover;
+    width: 75%;
+    height: 355px;
+    border-radius: 5px;
+  }
+  .mahsol .box .text-box {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 8px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .mahsol {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .mahsol .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+    width: 60%;
+    height: 95%;
+    margin: 0 auto;
+    padding: 5px 5px 5px 0;
+  }
+  .mahsol .box .I-2 {
+    background: url(../image/10111.jpg) no-repeat 10% 70%/cover;
+    width: 75%;
+    height: 355px;
+    border-radius: 5px;
+  }
+  .mahsol .box .text-box {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 8px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .mahsol {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .mahsol .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 5px 0px 0px 0px;
+  }
+  .mahsol .box .I-2 {
+    background: url(../image/10111.jpg) no-repeat 10% 70%/cover;
+    width: 75%;
+    height: 355px;
+    border-radius: 5px;
+  }
+  .mahsol .box .text-box {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 8px;
+    margin-top: 10px;
+  }
+}
 
 /*# sourceMappingURL=style-scss.css.map */
