@@ -165,5 +165,17 @@
     margin-top: 10px;
   }
 }
+.btn-s {
+  display: flex;
+  justify-content: center;
+}
+.btn-s .btn-clik {
+  background-color: rgba(150, 15, 200, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.404);
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  margin: 0 auto;
+}
 
 /*# sourceMappingURL=style-scss.css.map */
